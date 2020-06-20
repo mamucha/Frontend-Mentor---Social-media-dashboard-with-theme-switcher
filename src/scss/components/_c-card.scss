@@ -1,0 +1,21 @@
+.c-card {
+	&__big {
+		div:nth-child(3) > div {
+			border-top-color: #e1306c;
+		}
+
+		div:nth-child(4) > div {
+			border-top-color: #dc414c;
+		}
+	}
+
+	&__small {
+	}
+
+	&__title {
+		color: hsl(228, 34%, 66%);
+		font-weight: 700;
+		font-size: rem(18px);
+		margin: 30px 0;
+	}
+}

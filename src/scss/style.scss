@@ -1,0 +1,19 @@
+// bootsrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//variable
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//reset, normalize, helper-class
+@import "base/normalize";
+@import "base/global";
+
+// components, layouts
+@import "components/c-logo";
+@import "layout/l-header";
+@import "layout/l-container";
+@import "components/c-switch";
+@import "components/c-followers";
+@import "components/c-card";
+@import "components/c-overview";

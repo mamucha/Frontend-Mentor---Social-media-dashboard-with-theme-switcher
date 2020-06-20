@@ -1,0 +1,7 @@
+.l-header {
+	@include flex(flex, center, space-between);
+
+	div:nth-child(2) {
+		cursor: pointer;
+	}
+}

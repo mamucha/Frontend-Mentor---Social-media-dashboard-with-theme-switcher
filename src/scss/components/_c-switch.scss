@@ -1,0 +1,13 @@
+.c-switch {
+	@include flex_center();
+
+	& label {
+		color: hsl(228, 34%, 66%);
+		font-weight: 700;
+	}
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+	order: 2;
+}

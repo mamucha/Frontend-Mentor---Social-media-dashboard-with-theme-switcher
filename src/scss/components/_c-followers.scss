@@ -1,0 +1,43 @@
+.c-followers {
+	@include flex(flex, center, center, column);
+	padding: rem(20px);
+	margin-bottom: rem(15px);
+	background: hsl(228, 28%, 20%);
+	border-radius: 5px;
+	border-top: 5px solid #1ca0f2;
+
+	&__name {
+		color: hsl(228, 34%, 66%);
+		font-weight: 700;
+		font-size: rem(12px);
+		margin-bottom: rem(25px);
+
+		img {
+			margin-right: 5px;
+		}
+	}
+
+	&__number {
+		font-size: rem(42px);
+		margin: 0 0 10px;
+		font-weight: 700;
+	}
+
+	&__text {
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		color: hsl(228, 34%, 66%);
+	}
+
+	&__today {
+		@include flex_center();
+		img {
+			width: rem(15px);
+			margin-right: rem(5px);
+		}
+
+		span {
+			font-weight: 700;
+		}
+	}
+}

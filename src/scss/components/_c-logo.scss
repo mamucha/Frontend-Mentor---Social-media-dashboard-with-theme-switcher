@@ -1,0 +1,11 @@
+.c-logo {
+	&__title {
+		font-size: rem(24px);
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		color: hsl(228, 34%, 66%);
+		font-weight: 700;
+	}
+}

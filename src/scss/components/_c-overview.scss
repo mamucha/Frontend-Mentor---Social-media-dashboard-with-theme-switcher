@@ -1,0 +1,31 @@
+.c-overview {
+	padding: rem(15px);
+	background: hsl(228, 28%, 20%);
+	border-radius: 5px;
+	margin-bottom: rem(15px);
+	@include flex(flex, center, space-between);
+
+	&__left {
+		&--name {
+			color: hsl(228, 34%, 66%);
+			font-weight: 700;
+		}
+
+		&--number {
+			font-size: rem(24px);
+			font-weight: 700;
+			margin: 0;
+		}
+	}
+
+	&__right {
+		@include flex(flex, flex-end, space-between, column);
+		&--precent {
+			@include flex_center();
+			img {
+				width: rem(10px);
+				margin-right: rem(5px);
+			}
+		}
+	}
+}

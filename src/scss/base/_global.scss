@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	@include font($fontFamily, $baseFontSize, 400, $baseColor);
+}
+
+footer {
+	@include flex_center();
+}
+
+.h-down {
+	color: #dc414c;
+}
+
+.h-up {
+	color: #1db489;
+}
+
+.h-algin {
+	align-self: stretch;
+}
+
+.h-light {
+	background: hsl(0, 0%, 100%);
+	transition: 0.3s ease-in-out;
+
+	.c-logo__title {
+		color: hsl(230, 17%, 14%);
+	}
+
+	.c-followers {
+		background: hsl(227, 47%, 96%);
+
+		&__number {
+			color: hsl(230, 17%, 14%);
+		}
+	}
+
+	.c-overview {
+		background: hsl(227, 47%, 96%);
+
+		h2 {
+			color: hsl(230, 17%, 14%);
+		}
+	}
+}
+
+.h-dark {
+	background: hsl(230, 17%, 14%);
+	transition: 0.3s ease-in-out;
+}
