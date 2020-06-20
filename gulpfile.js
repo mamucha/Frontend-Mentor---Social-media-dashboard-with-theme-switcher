@@ -22,7 +22,7 @@ sass.compiler = require("sass");
 const server = function (cb) {
 	const config = {
 		server: {
-			baseDir: "./dist",
+			baseDir: "./docs",
 		},
 		open: true,
 		notify: false,
@@ -61,7 +61,7 @@ const css = function () {
 		)
 		.pipe(csso())
 		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest("dist/css"))
+		.pipe(gulp.dest("docs/css"))
 		.pipe(browserSync.stream());
 };
 
@@ -84,7 +84,7 @@ const html = function (cb) {
 				basepath: "@file",
 			})
 		)
-		.pipe(gulp.dest("dist"));
+		.pipe(gulp.dest("docs"));
 };
 
 const htmlReload = function (cb) {
