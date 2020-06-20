@@ -3,7 +3,7 @@
 	background: hsl(228, 28%, 20%);
 	border-radius: 5px;
 	margin-bottom: rem(15px);
-	@include flex(flex, center, space-between);
+	@include flex(flex, stretch, space-between);
 
 	&__left {
 		&--name {
